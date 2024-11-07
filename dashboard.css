@@ -1,0 +1,154 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    color: #ffffff;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 3, 53);
+    display: flex;
+}
+
+.img-box{
+    width: 50px;
+    height: 50px;
+    border: #ffffff 3px solid;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink:0;
+}
+.img-box img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile h2{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+
+.menu{
+    background-color: #333647;
+    width: 100px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s ;
+    text-align: center;
+}
+.menu:hover{
+    width: 360px;
+}
+ul{
+    list-style: none;
+    height: 95%;
+    position: relative;
+}
+ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    transition: .5s ;
+}
+ul li a:hover,.active,.data-info .box:hover,td:hover{
+    background-color: #fff5;
+}
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out a{
+    background-color: rgb(218, 0, 0);
+}
+ul li a i{
+    font-size: 30px;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+}
+
+
+.title-info{
+    background-color: #272b46;
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:8px ;
+    margin: 10px 0;
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap:10px
+}
+
+.data-info .box{
+    height: 150px;
+    width: 150px;
+    background-color: #424662;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.data-info .box i{
+    font-size: 40px;
+}
+.data-info .box  .data{
+    text-align: center;
+}
+.data-info .box  span{
+font-size:30px ;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+   
+}
+th,td{
+    background-color: #343651;
+    height: 40px;
+    border-radius: 8px;
+}
+th{
+    background-color: #626584;
+}
+.price , .count{
+    background-color: #cacde4;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size:15px ;
+    font-weight: 600;
+}
+.price{
+    background-color: #ffd1d1;
+    color: rgb(161, 0, 0);
+}
+
+.count{
+    background-color: #bcbcff;
+    color: rgb(0, 0, 135);
+}
